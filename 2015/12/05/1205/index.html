@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link current">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</h1>
+
+    <h4>Dec 5, 2015</h4>
+    <ul>
+<li><p><strong>目的就是想写一个核心知识的简洁明了的文档于人于己都方便,方便日后工作忘记的知识点查询使用一片文档就搞定，把所有核心的知识点能结合的全部结合进来，一来是以免以后忘记，二来是看来看去好多篇文章，通篇全是文字描述真的很啰嗦，顾名思义叫做速查表。目前的阶段还未完成，还要完善。很多内容都是查询各种官方和非官方的一些资料，包括一些前端大牛的流弊思想，如果错误的地方请给予指正！ 斯密马赛！</strong></p>
+<h3 id="块元素_共_27_个_html5">块元素    共 27 个 <code>html5</code></h3></li>
+<li><p>块级元素的 <code>width</code> 默认为 100%</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>元素名称</th>
+<th>语义</th>
+<th>独占一行</th>
+<th>宽高</th>
+<th>margin</th>
+<th>padding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>address</code></td>
+<td>联系方式信息</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>figcaption</code></td>
+<td>图文信息组标题</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>article</code></td>
+<td>文章内容</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>figure</code></td>
+<td>图文信息组</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>output</code></td>
+<td>表单输出</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>aside</code></td>
+<td>伴随内容</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>footer</code></td>
+<td>区段尾或页尾</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>audio</code></td>
+<td>音频播放</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>section</code></td>
+<td>一个页面片段</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>canvas</code></td>
+<td>绘制图形</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>header</code></td>
+<td>区段头或页头</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>hgroup</code></td>
+<td>标题组</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><code>video</code></td>
+<td>视频</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>dl、dd</td>
+<td>自定义列表</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>ol</td>
+<td>有序列表</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>ul</td>
+<td>无序列表</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>p</td>
+<td>行</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>blockquote</td>
+<td>块引用</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>form</td>
+<td>表单</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>pre</td>
+<td>预格式化文本</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>hr</td>
+<td>水平分割线</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>h1~h6</td>
+<td>标题级别 1-6.</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>table</td>
+<td>表格</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>tfoot</td>
+<td>表脚注</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>div</td>
+<td>文档分区</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>fieldset</td>
+<td>表单元素分组</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>noscript</td>
+<td>不支持脚本或禁用脚本</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<h3 id="内联元素_共_31_个_html5">内联元素    共 31 个 <code>html5</code></h3><ul>
+<li>内联元素的<code>width</code> 自身内容宽度。</li>
+<li>内联元素可以设置<code>line-height</code> 改变高度</li>
+<li>内联元素可以设置左右的 <code>margin</code>、<code>padding</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>元素名称</th>
+<th>语义</th>
+<th>独占一行</th>
+<th>宽高</th>
+<th>margin</th>
+<th>padding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>锚点</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>abbr</td>
+<td>缩写</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>acronym</td>
+<td>首字</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>b</td>
+<td>粗体（不推荐）</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>bdo</td>
+<td>bidi override</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>big</td>
+<td>大字体</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>br</td>
+<td>换行</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>cite</td>
+<td>引用</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>code</td>
+<td>计算机代码（在引用源码的时候需要）</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>dfn</td>
+<td>定义字段</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>em</td>
+<td>强调</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>font</td>
+<td>字体设定（不推荐）</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>i</td>
+<td>斜体</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>img</td>
+<td>图片</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>input</td>
+<td>输入框</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>kbd</td>
+<td>定义键盘文本</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>label</td>
+<td>表格标签</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>q</td>
+<td>短引用</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>s</td>
+<td>中划线（不推荐）</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>samp</td>
+<td>定义范例计算机代码</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>select</td>
+<td>项目选择</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>small</td>
+<td>小字体文本</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>span</td>
+<td>常用内联容器，定义文本内区块</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>strike</td>
+<td>中划线</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>strong</td>
+<td>粗体强调</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>sub</td>
+<td>下标</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>sup</td>
+<td>上标</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>textarea</td>
+<td>多行文本输入框</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>tt</td>
+<td>电传文本</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>u</td>
+<td>下划线</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+<tr>
+<td>var</td>
+<td>定义变量</td>
+<td>N</td>
+<td>N</td>
+<td>上下无效</td>
+<td>上下无效</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<blockquote>
+<h3 id="IE盒模型与W3C标准盒模型">IE盒模型与W3C标准盒模型</h3><ul>
+<li>内联元素的<code>width</code> 自身内容宽度。</li>
+<li>内联元素可以设置<code>line-height</code> 改变高度</li>
+<li>内联元素可以设置左右的 <code>margin</code>、<code>padding</code><br><img src="http://upload-images.jianshu.io/upload_images/1243812-9cc5a73b9c1aa3d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>eg：一个div设置width是500px（因为我们肯定设置的时候是设置div的宽度 而不会设置内容宽度具体是多少）<pre><code>在标准盒模型中   盒子实际宽度  =  <span class="number">500</span>px+padding+border （<span class="number">500</span>即为内容宽度 ）
+在ie的盒模型中   盒子实际宽度  = <span class="number">500</span>px（这个<span class="number">500</span>是包含了内容宽度 padding 和border） 
+</code></pre>转过来想 实际的内容的宽度：<br>标准下=500px ；<br>ie下=500-padding-border（这下与图中的事例正好吻合了）<br>简单地说：<br>标准盒摸型盒子的实际宽度是 width+padding+border ；<br>ie的盒摸型盒子的实际宽度是 就是width</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="定位">定位</h3><ul>
+<li><code>position</code> 属性规定元素的定位类型。有以下 5 种值可供选择。</li>
+<li><code>relative</code> 一般配合<code>absolute</code>使用，先相对后绝对，否则绝对定位的元素会找到最上层的父元素就是视窗本身了。</li>
+<li><code>fixed</code>是一种特殊的绝对定位，对其设置的偏移量永远是相对于视窗本身。我们常见到的导航条固定在页面顶部，回到页面顶部按钮基本都是采用此定位方式。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+<th>偏移</th>
+<th>层级</th>
+<th>定位后display</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>static</code></td>
+<td>默认值。没有定位，元素出现在正常的流中</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>relative</code></td>
+<td>相对定位，相对于其正常位置进行定位。</td>
+<td><code>top</code> <code>right</code> <code>bottom</code> <code>left</code></td>
+<td><code>z-index</code></td>
+<td>不改变</td>
+</tr>
+<tr>
+<td><code>absolute</code></td>
+<td>绝对定位 相对于<code>static</code>定位以外的第一个父元素进行定位。</td>
+<td><code>top</code> <code>right</code> <code>bottom</code> <code>left</code></td>
+<td><code>z-index</code></td>
+<td><code>inline-block</code></td>
+</tr>
+<tr>
+<td><code>fixed</code></td>
+<td>绝对定位，相对于浏览器窗口进行定位。</td>
+<td><code>top</code> <code>right</code> <code>bottom</code> <code>left</code></td>
+<td><code>z-index</code></td>
+<td><code>block</code></td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>从父元素继承，IE8之前不支持。</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<blockquote>
+<h3 id="浮动">浮动</h3><p>  <code>float</code></p>
+<ul>
+<li>浮动就是个带有方位的display:inline-block属性”。<br>left<br>right<br>IE下清除浮动准则很简单，使元素haslayout就可以了。如宽度值，高度值，绝对定位，zoom，浮动本身都可以让元素haslayout。显然，首选zoom:1;不会干扰任何样式。<br>非IE浏览器常用的是overflow属性，overflow:hidden;或是overflow:scroll都可以，不过由于后者经常一不小心出现滚动条，所以前者用的更多些。由于现代浏览器都支持after<del>伪类</del>伪元素，所以常常也会用after写入一个clear属性的元素清除浮动。当然，最投机取巧的方法就是直接一个<div style="clear:both"></div><br>放到当作最后一个子标签放到父标签那儿<br>清楚浮动推荐：<br>.fix{zoom:1;}<br>.fix:after{display:block; content:’clear’; clear:both; line-height:0; visibility:hidden;}</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="IE浏览器hack">IE浏览器hack</h3><pre><code><span class="class">.ie6_7_8</span>{
+    <span class="attribute">color</span>:blue; <span class="comment">/*所有浏览器*/</span>
+    <span class="attribute">color</span>:red\<span class="number">9</span>; <span class="comment">/*IE8以及以下版本浏览器*/</span>
+    *<span class="attribute">color</span>:green; <span class="comment">/*IE7及其以下版本浏览器*/</span>
+    <span class="attribute">_color</span>:purple; <span class="comment">/*IE6浏览器*/</span>
+}
+</code></pre><hr>
+<blockquote>
+<h4 id="参考">参考</h4><ul>
+<li>HTML<br><a href="http://www.zhangxinxu.com/wordpress/2009/12/html-css%E5%88%97%E8%A1%A8%E5%85%83%E7%B4%A0uloldl%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8/" target="_blank" rel="external">html-css列表元素uloldl的研究与应用 </a><br><a href="http://www.zhangxinxu.com/wordpress/2011/03/html5%E7%BB%88%E6%9E%81%E5%A4%87%E5%BF%98%E5%A4%A7%E5%85%A8%EF%BC%88%E5%9B%BE%E7%89%87%E7%89%88%E6%96%87%E5%AD%97%E7%89%88%EF%BC%89/" target="_blank" rel="external">html5终极备忘大全（图片版文字版）</a><br><a href="http://www.zhangxinxu.com/wordpress/2011/06/%E5%85%B3%E4%BA%8Ehtml5%E4%B8%AD%E4%B8%80%E4%BA%9B%E8%A2%AB%E8%88%8D%E5%BC%83%E7%9A%84%E5%85%83%E7%B4%A0%E5%8F%8A%E7%89%B9%E5%BE%81/" target="_blank" rel="external">关于HTML5中一些被舍弃的元素及特征</a><br><a href="http://www.zhangxinxu.com/wordpress/2010/12/div%E6%A8%A1%E6%8B%9Ftextarea%E6%96%87%E6%9C%AC%E5%9F%9F%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0%E9%AB%98%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94/" target="_blank" rel="external">div模拟textarea文本域轻松实现高度自适应</a><br><a href="http://www.zhangxinxu.com/wordpress/2011/11/i-b-em-strong-html5-%E8%AF%AD%E4%B9%89/" target="_blank" rel="external">i, b, em, strong元素在HTML5中的新语义</a><br><a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/" target="_blank" rel="external">去除inline-block元素间间距的N种方法</a><br><a href="http://www.zhangxinxu.com/wordpress/2014/04/%E8%87%AA%E9%80%82%E5%BA%94%E8%A1%A8%E6%A0%BC-%E5%AD%97%E7%AC%A6%E6%8D%A2%E8%A1%8C-%E6%BA%A2%E5%87%BA%E7%82%B9%E7%82%B9%E7%82%B9-table-text-overflow-ellipsis-word-wrap-break-all/" target="_blank" rel="external">自适应表格连续字符换行及单行溢出点点点显示</a></li>
+<li>盒子模型<br><a href="http://www.w3cfuns.com/blog-5475832-5409058.html" target="_blank" rel="external">ie盒模型和w3c标准盒模型</a></li>
+<li>定位<br><a href="http://www.zhangxinxu.com/wordpress/2010/01/absolute%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%9D%9E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%94%A8%E6%B3%95/" target="_blank" rel="external">绝对定位的非绝对定位用法 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-%E7%9B%B8%E5%AF%B9%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="external">CSS 相对|绝对(relative/absolute)定位系列（一）</a><br><a href="http://www.zhangxinxu.com/wordpress/2010/12/css-%E7%9B%B8%E5%AF%B9%E7%BB%9D%E5%AF%B9relativeabsolute%E5%AE%9A%E4%BD%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_blank" rel="external">CSS 相对/绝对(relative/absolute)定位系列（二）</a><br><a href="http://www.zhangxinxu.com/wordpress/2011/03/css-%E7%9B%B8%E5%AF%B9%E7%BB%9D%E5%AF%B9relativeabsolute%E5%AE%9A%E4%BD%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/" target="_blank" rel="external">CSS 相对/绝对(relative/absolute)定位系列（三）</a><br><a href="http://www.zhangxinxu.com/wordpress/2011/08/css%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8Drelative%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8Dabsolute%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89/" target="_blank" rel="external">CSS 相对/绝对(relative/absolute)定位系列（四）</a><br><a href="http://www.zhangxinxu.com/wordpress/2011/08/css%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E4%BA%94%E4%B9%8Bz-index%E7%AF%87/" target="_blank" rel="external">CSS相对定位|绝对定位(五)之z-index篇 </a><br><a href="http://www.zhangxinxu.com/wordpress/2011/12/position-absolute-text-align-center/" target="_blank" rel="external">absolute元素在text-align属性下的对齐显示 </a><br><a href="http://www.zhangxinxu.com/wordpress/2015/03/background-object-position-value-percent/" target="_blank" rel="external">值简介,相对底部右侧定位,理解百分比定位</a></li>
+<li>浮动<br><a href="http://segmentfault.com/a/1190000003856280" target="_blank" rel="external">CSS 定位 浮动 非常详细</a><br><a href="http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/" target="_blank" rel="external">CSS float浮动的深入研究、详解及拓展(一) </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%BA%8C/" target="_blank" rel="external">CSS float浮动的深入研究、详解及拓展(二) </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/11/%E6%8B%9C%E6%8B%9C%E4%BA%86%E6%B5%AE%E5%8A%A8%E5%B8%83%E5%B1%80-%E5%9F%BA%E4%BA%8Edisplayinline-block%E7%9A%84%E5%88%97%E8%A1%A8%E5%B8%83%E5%B1%80/" target="_blank" rel="external">拜拜了,浮动布局-基于display:inline-block的列表布局 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/01/%e5%af%b9overflow%e4%b8%8ezoom%e6%b8%85%e9%99%a4%e6%b5%ae%e5%8a%a8%e7%9a%84%e4%b8%80%e4%ba%9b%e8%ae%a4%e8%af%86" target="_blank" rel="external">对overflow与zoom”清除浮动”的一些认识 </a></li>
+<li>CSS其它<br><a href="http://www.zhangxinxu.com/wordpress/2010/05/%E6%88%91%E5%AF%B9css-vertical-align%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3%E4%B8%8E%E8%AE%A4%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="external">我对CSS vertical-align的一些理解与认识（一）</a><br><a href="http://www.zhangxinxu.com/wordpress/2010/06/css-vertical-align%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89%E4%B9%8Btext-top%E7%AF%87/" target="_blank" rel="external">CSS vertical-align的深入理解(二)之text-top篇 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/04/css-reset%E7%9A%84%E9%87%8D%E6%96%B0%E5%AE%A1%E8%A7%86-%E9%81%BF%E5%85%8D%E6%A0%B7%E5%BC%8F%E9%87%8D%E7%BD%AE/" target="_blank" rel="external">CSS reset的重新审视 – 避免样式重置 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/09/%E7%B2%BE%E7%AE%80%E9%AB%98%E6%95%88%E7%9A%84css%E5%91%BD%E5%90%8D%E5%87%86%E5%88%99%E6%96%B9%E6%B3%95/" target="_blank" rel="external">精简高效的CSS命名准则/方法 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/08/css3%E4%B8%8B%E7%9A%84147%E4%B8%AA%E9%A2%9C%E8%89%B2%E5%90%8D%E7%A7%B0%E5%8F%8A%E5%AF%B9%E5%BA%94%E9%A2%9C%E8%89%B2%E5%80%BC/" target="_blank" rel="external">css3下的147个颜色名称及对应颜色值 </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/08/html5-css-reset/" target="_blank" rel="external">HTML5 css reset </a><br><a href="http://www.zhangxinxu.com/wordpress/2010/10/%E6%88%91%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E7%A7%8Ddisplaytable-cell%E7%9A%84%E5%BA%94%E7%94%A8/" target="_blank" rel="external">我所知道的几种displaytable-cell的应用 </a><br><a href="http://www.zhangxinxu.com/wordpress/2013/01/absolute-display-visibility-reflow/" target="_blank" rel="external">实验：absolute/display隐藏与回流等性能</a><br><a href="http://www.zhangxinxu.com/wordpress/2013/07/letter-spacing-first-letter-%E6%8C%89%E9%92%AE%E6%96%87%E5%AD%97%E9%9A%90%E8%97%8F/" target="_blank" rel="external">letter-spacing+first-letter实现按钮文字隐藏</a><br><a href="http://www.zhangxinxu.com/wordpress/2014/08/css-counters-automatic-number-content/" target="_blank" rel="external">CSS计数器(序列数字字符自动递增)详解</a><br><a href="http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/" target="_blank" rel="external">CSS深入理解vertical-align和line-height的基友关系</a><br><a href="http://www.zhangxinxu.com/wordpress/2015/07/ie7-css-js-improvement-change/" target="_blank" rel="external">了不起的IE7浏览器-CSS新特性-实现与思维变革</a></li>
+<li>布局<br><a href="http://www.zhangxinxu.com/wordpress/2011/03/displayinline-blocktext-alignjustify%E4%B8%8B%E5%88%97%E8%A1%A8%E7%9A%84%E4%B8%A4%E7%AB%AF%E5%AF%B9%E9%BD%90%E5%B8%83%E5%B1%80/" target="_blank" rel="external">display:inline-block/text-align:justify下列表的两端对齐布局</a><br>*学习<br><a href="http://www.zhangxinxu.com/wordpress/2012/07/bottleneck-css-study/" target="_blank" rel="external">说说CSS学习中的瓶颈</a></li>
+</ul>
+</blockquote>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

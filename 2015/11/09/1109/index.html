@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>聊聊HTML5的figure标签 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link current">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link current">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link current">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>聊聊HTML5的figure标签</h1>
+
+    <h4>Nov 9, 2015</h4>
+    <p>作者：缪维颖（饥人谷前端7班） </p>
+<p>文章来源：<br><a href="http://www.jianshu.com/p/c4fae093872f" target="_blank" rel="external">http://www.jianshu.com/p/c4fae093872f</a></p>
+<h3 id="HTML的学习标准">HTML的学习标准</h3><hr>
+<p>很多网页通篇都是<code>&lt;div&gt;</code>，这类网页语义化很差。学习HTML要做到除了会使用标签、属性，还要知道什么时候用什么样的标签，并尽可能的写出语义化的页面。</p>
+<p>最开始的时候肯定做不到这些，很多标签一般都是用过之后才能够真正有印象。所以开始上手的时候，可以先找一个网站上已有的简单页面，然后自己用尽可能多的并且合适的标签把它重新写出来。</p>
+<p>写语义化页面的好处：越原生的标签加载速度越快，减少css的使用可加快网页加载速度。</p>
+<h3 id="块级元素与内联元素">块级元素与内联元素</h3><hr>
+<h4 id="块级元素">块级元素</h4><p><strong>特征：</strong>根据文档内容平铺屏幕，创建的块级元素从新行开始，相邻块级元素会在不同行显示。块级元素的width=屏幕宽，height＝内容自适应。</p>
+<p><strong>举例：</strong>div, p , h1  标签</p>
+<p><strong>区别：</strong>p 比 div 多”margin＝16px 0px;”的默认样式</p>
+<p><strong>相似：</strong>p和h1很相似，h1非常像是字体加粗，上下边距增宽后的p标签；但p通常用于大段文字，而h1用于标题。</p>
+<blockquote>
+<p><strong>小贴士：</strong>如何查看标签的默认样式？<br>打开chrom浏览器，command+option+i快捷键调用调试器，调试器中的style样式和盒模型可配合查看标签默认样式。</p>
+</blockquote>
+<h4 id="内联元素">内联元素</h4><p><strong>特征：</strong>内容撑开元素，创建的内联元素会在同一行按从左至右的顺序展开，不单独占一行。内联元素的width=内容自适应，height＝内容自适应。</p>
+<p><strong>举例：</strong><code>&lt;span&gt;</code>标签</p>
+<blockquote>
+<p><strong>小贴士：</strong><br>块级元素和内联元素在加入css样式后可改变这种差异。当块级元素加入display:inline属性后，若干个块级元素可在同一行显示；同样的，当内联元素加入display:block属性后，每次新创建的内联元素也可实现从新行开始的特征。</p>
+</blockquote>
+<h3 id="双标签与单标签">双标签与单标签</h3><hr>
+<h4 id="双标签">双标签</h4><p><strong>特征：</strong>含开始标签和结束标签，标签内部可嵌套内容</p>
+<p><strong>举例：</strong><code>&lt;div&gt;&lt;/div&gt;</code>;<code>&lt;span&gt;&lt;/span&gt;</code></p>
+<p><strong>说明：</strong>h5的大部分标签都是双标签</p>
+<h4 id="单标签">单标签</h4><p><strong>特征：</strong>在开始标签内直接结束，不再有单独的结束标签，标签内无嵌套内容</p>
+<p><strong>举例：</strong><code>&lt;img/&gt;&lt;br/&gt;</code></p>
+<h3 id="心得">心得</h3><hr>
+<p>虽然第一节课由于网络或者硬件设备的不给力上得有点断断续续，但也学到了很多东西～课下再重新总结一下笔记感觉有了更系统的收获～第一次写技术博客，希望自己再接再厉能够坚持到底～！</p>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

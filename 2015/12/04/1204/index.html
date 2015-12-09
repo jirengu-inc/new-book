@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>JQuery plugin笔记 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link current">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>JQuery plugin笔记</h1>
+
+    <h4>Dec 4, 2015</h4>
+    <p>作者：李栋（饥人谷前端6班）</p>
+<p>文章来源：<br><a href="http://www.jianshu.com/p/c6687650e75f" target="_blank" rel="external">http://www.jianshu.com/p/c6687650e75f</a></p>
+<hr>
+<p>1.概述<br>2.插件实例</p>
+<hr>
+<p>一、概述<br>1.目的 </p>
+<ul>
+<li>为了<strong>扩展jQuery的功能</strong></li>
+</ul>
+<p>2.实现方式</p>
+<ul>
+<li><p>给<strong>jquery</strong>添加方法<br>//$.method</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$.goToTop = function()&#123;&#10;       $(&#39;body&#39;).scrollTop(0)&#10;     &#125;&#10;$(&#39;button&#39;).click(function()&#123;&#10;       $.goToTop()&#10;     &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给<strong>$.fn</strong>添加方法<br>//$.fn.method</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$.fn.goToTop=function()&#123;&#10;      this.click(function()&#123;&#10;      $(&#39;body&#39;).animate(&#123;scrollTop:0&#125;)&#10;    &#125;)&#10;&#125;&#10;$(&#39;button&#39;).goToTop()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>二、插件实例<br>1.回到顶部</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">//css&#37096;&#20998;&#10;.goToButton&#123;&#10;  position:fixed;&#10;  right:10px;&#10;  bottom:60px;//&#20026;&#20102;&#22312;jsbin&#37324;&#38754;&#30475;&#21040;&#25928;&#26524;&#10;  width:50px;&#10;  height:50px;&#10;  background:#bbb;&#10;  border-radius:2px;&#10;&#125;&#10;.goToButton-arrow&#123;&#10;  border:10px solid white;&#10;  border-color:transparent transparent white;&#10;  position:absolute;&#10;  top:50%;&#10;  left:50%;&#10;  margin-top:-15px;&#10;  margin-left:-10px;&#10;&#125;&#10;//js&#37096;&#20998;&#10;//&#26500;&#24314;&#12289;&#25554;&#20837;div&#10;var $button=$(&#39;&#60;div class=&#34;goToButton&#34;&#62;&#60;/div&#62;&#39;)&#10;  $(&#39;body&#39;).append($button)  &#10; var $arrow=$(&#39;&#60;div class=&#34;goToButton-arrow&#34;&#62;&#60;/div&#62;&#39;) &#10;  $arrow.appendTo($button)&#10;  //&#20851;&#38190;&#35821;&#21477;&#10;$.goToTop=function()&#123;&#10;    $button.click(function()&#123;&#10;    $(&#39;body&#39;).animate(&#123;scrollTop:0&#125;)&#10;  &#125;)&#10;&#125;&#10;                 &#10;$.goToTop()</span><br></pre></td></tr></table></figure>
+<p>具体实例<a href="http://js.jirengu.com/mic/3" target="_blank" rel="external">参照效果</a><br> 2.手风琴<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">//html&#20869;&#23481;ul&#62;li*3&#62;p&#123;$&#125;+p&#62;img&#10;//js&#37096;&#20998;&#10;$.fn.accordion=function(object)&#123;&#10;  var to=object.to&#10;  this.on(&#39;click&#39;,&#39;li&#39;,function()&#123;&#10;    var $li=$(this)&#10;    if($li.hasClass(to))&#123;&#10;      $li.removeClass(to)&#10;    &#125;else&#123;&#10;      $li.addClass(to).siblings().removeClass(to)&#10;    &#125;&#10;  &#125;)&#10;&#125;&#10;$(&#39;ul&#39;).accordion(&#123;to:&#39;open&#39;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>具体实例<a href="http://js.jirengu.com/fos/2" target="_blank" rel="external">参照效果</a><br>3.简单轮播<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">//css&#37096;&#20998; &#65306;&#22806;&#37096;&#19968;&#20010;&#23481;&#22120;&#65292;&#32477;&#23545;&#23450;&#20301;&#65292;&#35774;&#32622;left&#65306;0&#10;//js&#37096;&#20998;&#10;//&#31616;&#21333;&#23454;&#29616;&#10;// var i=0&#10;// setTimeout(function step()&#123;&#10;//   i++&#10;//   if(i==3)&#123;i=0&#125;&#10;//   $(&#39;ul&#39;).animate(&#123;left:i*(-121)&#125;)&#10;//   setTimeout(step,3000)&#10;// &#125;,3000)&#10;//&#37096;&#20998;&#25913;&#36827;&#21518;&#23454;&#29616;&#10;$.fn.slides=function()&#123;&#10;  var currentIndex=0&#10;  &#10;  this.each(function()&#123;&#10;    var $currentUl=$(this)&#10;  &#10;var imagecount=$currentUl.children(&#39;li&#39;).length&#10;  var imagewidth=$currentUl.children(&#39;li&#39;).first().width()&#10;  setTimeout(function step()&#123;&#10;    currentIndex++&#10;    if(currentIndex==imagecount)&#123;currentIndex=0&#125;&#10;    $currentUl.animate(&#123;left:currentIndex*(-imagewidth)&#125;)&#10;    setTimeout(step,2000)&#10;  &#125;,2000)&#10; &#125;) &#10;&#125;&#10;$(&#39;ul&#39;).slides()</span><br></pre></td></tr></table></figure></p>
+<p>具体实例<a href="http://js.jirengu.com/xel/3" target="_blank" rel="external">参照效果</a><br> 4.知识扩展<br>由于代码中多次用到this所以搜了下</p>
+<ul>
+<li><p><strong>$.fn.pluginName = function(opt){}</strong><br>//就是为jquery的prototype定义了函数, 任何一个jquery对象都可以使用这个成员函数,你只要知道<strong>$.fn = jQuery.prototype = $.prototype</strong></p>
+</li>
+<li><p><strong>$.fn.extend</strong><br>在jquery中重新定义了extend的使用方法, 如果只有一个参数, 那么就是扩展本身<br><strong>写法1：</strong>$.fn.extend({})<br>//就是用{}对象扩展$.fn, 也就是jquery的prototype, 这样, 和上面那个就一样了<br>两者没有什么区别, 怎么用看自己习惯和理解<br><strong>写法2：</strong>$.extend($.fn, {});<br>// 这个extend不是一个参数, 它作用是用后面的扩展前面的, 即用{}扩展了$.fn, 还是一个意思</p>
+</li>
+<li><p><strong>关于$(this)和this：</strong><br>你关键要知道this表示的是什么。<br>如果this是一个dom元素 -&gt;$(this)是一个jquery元素<br>如果this是一个jquery元素-&gt;$(this)还是一个jquery元素,<br>虽然你用==去判断两者是不同的, 但是他们内容都是一样的,<br>注意一点：<br><strong>$(‘.abc’).click(function(){});</strong><br>//this是dom元素, $(this)是jquery元素<br>//而写插件的时候, 由于是扩展prototype, 所以this就是对象实例, 即this就是jquery对象, $(this)还是jquery对象<br>他们虽然不是同一对象, 但是内容是完全相同的</p>
+</li>
+</ul>
+<hr>
+<p>以上实例都只是简单实现，期待进一步学习后改进…</p>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

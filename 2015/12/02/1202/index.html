@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>css伪类的顺序 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link current">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>css伪类的顺序</h1>
+
+    <h4>Dec 2, 2015</h4>
+    <p>作者：张颖莹（饥人谷前端7班）</p>
+<p>文章来源：<br><a href="http://www.jianshu.com/p/c7d766e9dfdd" target="_blank" rel="external">http://www.jianshu.com/p/c7d766e9dfdd</a></p>
+<p>首先我们需要知道css伪类是用来添加一些选择器的特殊效果。</p>
+<ul>
+<li>link表示的是正常情况下链接的样式。</li>
+<li>visit代表链接访问后的样式，则链接一旦被访问，则之后它的样式就会是你所设置的visited样式。</li>
+<li>hover在鼠标移到链接上时添加的特殊样式。</li>
+<li>focus 在一个元素成为焦点时生效，用户可以通过键盘或鼠标激活焦点。</li>
+<li>active在一个元素处于激活状态（鼠标在元素上按下还没有松开）时所使用的样式。</li>
+<li>hover理论上任何元素都可以使用的，focus多是针对表单的，如input等 。而active多用于链接。</li>
+</ul>
+<h2 id="顺序">顺序</h2><p>这四种伪类存在着一定的顺序，成为LVHA顺序。各个样式之间的顺序很有讲究，一旦出现排列错误就很有可能形成覆盖，导致其中某个样式无法显示。<br>比如，link与visit的位置是随意的。但hover，focus，active则必须按照focus–hover–active这个顺序。<br>link与visit的位置是任一的是因为link指的是元素被访问前的样式，而visit这指的是访问后的。而其他三个则与css的就近原则有关。<br>比如</p>
+<pre><code>a:focus{
+<span class="built_in">background</span>-<span class="built_in">color</span>:<span class="built_in">red</span>;
+}
+a:hover {
+<span class="built_in">background</span>-<span class="built_in">color</span>:yellow;
+      }   
+a:active{
+<span class="built_in">background</span>-<span class="built_in">color</span>:black;
+}
+&lt;body&gt;
+&lt;a href=<span class="string">"#"</span>&gt;zyy&lt;/a&gt;
+&lt;/body&gt;
+</code></pre><p>在这段代码中当我们时，我们把鼠标放上去是，会显示黄色<br><img src="http://upload-images.jianshu.io/upload_images/1221109-cb60853198464972.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="hover"><br>点击时显示的是黑色</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1221109-a67819741cfd9281.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="active"></p>
+<p>松开后是黄色移开鼠标是红色。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1221109-62f1645f2159e5ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="focus"></p>
+<p>然后我试着将这三个css的顺序变换得到了下面的结果<br>（h：hover a：active f：focus）</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">悬停</th>
+<th style="text-align:center">点击</th>
+<th style="text-align:center">松开</th>
+<th style="text-align:center">焦点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fha</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">black</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">red</td>
+</tr>
+<tr>
+<td>fah</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">red</td>
+</tr>
+<tr>
+<td>afh</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">red</td>
+</tr>
+<tr>
+<td>ahf</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">red</td>
+<td style="text-align:center">red</td>
+<td style="text-align:center">red</td>
+</tr>
+<tr>
+<td>haf</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">red</td>
+<td style="text-align:center">red</td>
+<td style="text-align:center">red</td>
+</tr>
+<tr>
+<td>hfa</td>
+<td style="text-align:center">yellow</td>
+<td style="text-align:center">black</td>
+<td style="text-align:center">red</td>
+<td style="text-align:center">red</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分析">分析</h3><ul>
+<li>由表格可以看出hover的位置不会影响悬停时样式的颜色，但它会间接影响其他两种样式的效果。</li>
+<li>active必须要在focus，hover的后面，否则就会被覆盖。</li>
+<li>focus的位置很关键它与其他两个的位置会影响一系列样式的效果。</li>
+</ul>
+<h2 id="引用">引用</h2><p><a href="http://www.bubuko.com/infodetail-767726.html" target="_blank" rel="external">http://www.bubuko.com/infodetail-767726.html</a><br><a href="http://hovertree.com/hvtart/bjae/v8e7w4u1.htm" target="_blank" rel="external">http://hovertree.com/hvtart/bjae/v8e7w4u1.htm</a><br><a href="http://www.w3school.com.cn/cssref/selector_hover.asp" target="_blank" rel="external">http://www.w3school.com.cn/cssref/selector_hover.asp</a><br><a href="http://www.bkjia.com/webzh/873587.html" target="_blank" rel="external">http://www.bkjia.com/webzh/873587.html</a></p>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

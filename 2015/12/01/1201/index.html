@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>meta标签 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link current">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>meta标签</h1>
+
+    <h4>Dec 1, 2015</h4>
+    <p>作者：张颖莹（饥人谷前端7班）</p>
+<p>文章来源：<a href="http://www.jianshu.com/p/3afaf3f00096" target="_blank" rel="external">http://www.jianshu.com/p/3afaf3f00096</a></p>
+<h1 id="概要">概要</h1><blockquote>
+<p>meta元素可提供有关页面的元信息(meta-information),比如针对搜索引擎和更新频度的描述和关键词。<meta> 标签位于文档的头部，不包含任何内容。<meta> 标签的属性定义了与文档相关联的名称/值对。——<a href="http://www.w3school.com.cn/" target="_blank" rel="external">W3School</a></p>
+</blockquote>
+<h1 id="属性">属性</h1><p><strong>必要属性</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:center">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">some text</td>
+<td style="text-align:left">定义与http-equiv或name属性相关的元信息， 并且始终要和 name 属性或 http-equiv 属性一起使用。</td>
+</tr>
+</tbody>
+</table>
+<pre><code><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"description"</span> <span class="attribute">content</span>=<span class="value">"Free Web tutorials"</span>&gt;</span>  
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+</code></pre><p><strong>可选属性</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:center">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">http-equiv</td>
+<td style="text-align:center">content-type/expire/ refresh</td>
+<td style="text-align:left">把content属性关联到HTTP头部。</td>
+</tr>
+<tr>
+<td style="text-align:center">name</td>
+<td style="text-align:center">author / description / keywords / generator / revised / others</td>
+<td style="text-align:left">把 content 属性关联到一个名称。</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">some text</td>
+<td style="text-align:left">定义用于翻译 content 属性值的格式。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="属性解析">属性解析</h3><h4 id="name">name</h4><p><strong>定义</strong><br><em>name 属性规定元数据的名称。 specifies the name for the metadata.name 属性规定属性的信息/值的名称。</em><br><strong>如果设置了 http-equiv 属性，则不应该设置 name 属性。</strong></p>
+<p><strong>语法</strong></p>
+<pre><code>&lt;meta <span class="property">name</span>=<span class="string">"value"</span>&gt;
+</code></pre><p><strong>属性值</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">application-name</td>
+<td style="text-align:left">规定页面所代表的 Web 应用程序的名称。</td>
+</tr>
+<tr>
+<td style="text-align:left">author</td>
+<td style="text-align:left">规定文档的作者的名字。<br>实例： <meta name="author" content="zyy"></td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">规定页面的描述。搜索引擎会把这个描述显示在搜索结果中。实例： <meta name="description" content="Free web tutorials"></td>
+</tr>
+<tr>
+<td style="text-align:left">generator</td>
+<td style="text-align:left">规定用于生成文档的一个软件包（不用于手写页面）。<br>实例： <meta name="generator" content="FrontPage 4.0"></td>
+</tr>
+<tr>
+<td style="text-align:left">keywords</td>
+<td style="text-align:left">规定一个逗号分隔的关键词列表 - 相关的网页（告诉搜索引擎页面是与什么相关的）。<br><strong>提示：</strong>总是规定关键词（对于搜索引擎进行页面分类是必要的）。<br>实例： <meta name="keywords" content="HTML, meta tag, tag reference"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意更多属性可查看</strong><a href="http://www.runoob.com/jsref/prop-meta-name.html" target="_blank" rel="external">Meta name 属性</a><br><strong>实例</strong></p>
+<pre><code><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"description"</span> <span class="attribute">content</span>=<span class="value">"zyy'meta"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"keywords"</span> <span class="attribute">content</span>=<span class="value">"标签,HTML,meta name"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"author"</span> <span class="attribute">content</span>=<span class="value">"zyy"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+</code></pre><h4 id="http-equiv">http-equiv</h4><p><strong>定义</strong><br><em>http-equiv 属性提供了属性的信息/值的 HTTP 头。<br>http-equiv 属性可用于模拟一个 HTTP 响应头。<br>使用 http-equiv 已经不是规定 HTML 文档的字符集的唯一方式：</em></p>
+<ul>
+<li>HTML 4.01： <code>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</code></li>
+<li>HTML5： <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></li>
+</ul>
+<p><strong>语法</strong></p>
+<pre><code><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"content-type|default-style|refresh"</span>&gt;</span>
+</code></pre><p><strong>属性值</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">content-type</td>
+<td style="text-align:left">规定文档的字符编码。<br>实例：<meta http-equiv="content-type" content="text/html; charset=UTF-8"></td>
+</tr>
+<tr>
+<td style="text-align:left">default-style</td>
+<td style="text-align:left">规定要使用的预定义的样式表。<br>实例：<meta http-equiv="default-style" content="*the document's preferred stylesheet*"><br><strong>注释：</strong>上面 content 属性的值必须匹配同一文档中的一个 link 元素上的 title 属性的值，或者必须匹配同一文档中的一个 style 元素上的 title 属性的值。</td>
+</tr>
+<tr>
+<td style="text-align:left">refresh</td>
+<td style="text-align:left">定义文档自动刷新的时间间隔。<br>实例：<meta http-equiv="refresh" content="300"><br>注释：值 “refresh” 应该慎重使用，因为它会使得页面不受用户控制。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实例</strong></p>
+<pre><code><span class="tag">&lt;<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"content-type"</span> "<span class="attribute">text</span>/<span class="attribute">html</span>; <span class="attribute">charset</span>=<span class="value">UTF-8"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"refresh"</span> <span class="attribute">content</span>=<span class="value">"30"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+</code></pre><h2 id="过时的用法">过时的用法</h2><pre><code><span class="comment">&lt;!--不再使用--&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=UTF-8"</span> /&gt;</span>
+<span class="comment">&lt;!--应该使用--&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>/&gt;</span>
+</code></pre><p>meta.name的属性值copyright可以用作版权说明</p>
+<pre><code><span class="comment">&lt;!-- 不再使用 --&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"copyright"</span> <span class="attribute">content</span>=<span class="value">"SitePoint"</span> /&gt;</span>
+</code></pre><p>应该提供一个链接标记指向一个版权页面(或锚在相同的页面上)。</p>
+<pre><code><span class="comment">&lt;!-- 应该使用 --&gt;</span>
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"copyright"</span> <span class="attribute">href</span>=<span class="value">"copyright.html"</span>　/&gt;</span>
+</code></pre><p>自2009年开始谷歌就宣布keywords已经不再包括在排名算法之中。（实际上google从来没有在算法中使用过）</p>
+<pre><code><span class="comment">&lt;!-- 不再使用 --&gt;</span>
+<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"keywords"</span> <span class="attribute">content</span>=<span class="value">"zyy,zyyy,HTML,CSS"</span> /&gt;</span>
+</code></pre><h2 id="心得">心得</h2><p>meta标签之所以很重要一个是因为meta标签提供了页面的元信息，meta标签的内容也会存在与搜索结果中。当用户在搜索结果总选择要打开的连接时，首先看到的就是meta的描述。所以虽然现在keywords已经不用来排名，但作为一个方便用户阅读来说还是很重要的。而且作为一个描述也会增加网页的点击量，者不仅所有的流量来自于谷歌等搜索引擎，其他网站也会赋予meta标签权重*。</p>
+<blockquote>
+<p><em>标签权重：权重标签就是会影响页面权重或者相关性的html标签。权重标签常用于突出页面中相对重要的内容，从而提高页面相关性，增加页面权重。从用户体验角度来理解就更加清晰明了，例如写一篇文章，通过权重标签把某个关键词（或语句）变得很显眼，那么如果用户进来，一眼之间肯定就会看到那个关键词（或语句），那么百度蜘蛛是模拟用户的浏览方式，肯定也会很优化重视那个关键词（或语句）。</em></p>
+</blockquote>
+<h2 id="在segmentfault看了这篇文章，觉得整理的很详细，所以转载过来和大家分享一下。">在segmentfault看了这篇文章，觉得整理的很详细，所以转载过来和大家分享一下。</h2><p>原文地址：<a href="http://segmentfault.com/blog/ciaocc/1190000002407912" target="_blank" rel="external">http://segmentfault.com/blog/ciaocc/1190000002407912</a> </p>
+<h2 id="引用">引用</h2><p><a href="http://www.w3school.com.cn/tags/tag_meta.asp#meta_prop_content" target="_blank" rel="external">http://www.w3school.com.cn/tags/tag_meta.asp#meta_prop_content</a><br><a href="http://segmentfault.com/a/1190000002407912" target="_blank" rel="external">http://segmentfault.com/a/1190000002407912</a><br><a href="http://www.runoob.com/jsref/prop-meta-content.html" target="_blank" rel="external">http://www.runoob.com/jsref/prop-meta-content.html</a><br><a href="http://www.runoob.com/tags/att-meta-name.html" target="_blank" rel="external">http://www.runoob.com/tags/att-meta-name.html</a><br><a href="http://www.runoob.com/tags/att-meta-http-equiv.html" target="_blank" rel="external">http://www.runoob.com/tags/att-meta-http-equiv.html</a><br><a href="http://www.w3cplus.com/css/meta-tags-html-basics-best-practices.html" target="_blank" rel="external">http://www.w3cplus.com/css/meta-tags-html-basics-best-practices.html</a></p>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

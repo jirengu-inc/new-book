@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Animation课堂笔记 - </title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/jirengu-inc/new-book/css/page.css" type="text/css">
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/jirengu-inc/new-book/">
+        <img src="/jirengu-inc/new-book/images/logo.png">
+        <span>饥人谷课件</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+</div>
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query" class="st-default-search-input">
+  </form>
+</li>
+<li><a href=" /jirengu-inc/new-book/guide/" class="nav-link">课件</a></li>
+<li><a href="/jirengu-inc/new-book/knowledge/" class="nav-link">知识点</a></li>
+<li><a href="/jirengu-inc/new-book/homework/" class="nav-link">作业</a></li>
+<li><a href="/jirengu-inc/new-book/examples/" class="nav-link">示例</a></li>
+<li><a href="/jirengu-inc/new-book/blog/" class="nav-link">学员博客</a></li>
+<!--<li class="nav-dropdown-container">
+  <a class="nav-link">社区</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="#" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="#" class="nav-link" target="_blank">论坛</a></li>
+  </ul>
+</li>
+ -->
+
+    </ul>
+    <div class="list">
+        <h2>Recent Posts</h2>
+        <ul>
+        
+            <li>
+                <a href="/2015/12/05/1205/" class="sidebar-link">HTML CSS核心速查表-块内联、盒模型、定位、浮动、兼容性、其它。。。</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/04/1204/" class="sidebar-link">JQuery plugin笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/03/1203/" class="sidebar-link current">Animation课堂笔记</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/02/1202/" class="sidebar-link">css伪类的顺序</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/01/1201/" class="sidebar-link">meta标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/19/1119/" class="sidebar-link">如何使块状元素中的元素等高</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/18/1118/" class="sidebar-link">HTML学习总结-2</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/09/1109/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+            <li>
+                <a href="/2015/11/08/1108副本/" class="sidebar-link">聊聊HTML5的figure标签</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <h1>Animation课堂笔记</h1>
+
+    <h4>Dec 3, 2015</h4>
+    <p>作者：李栋（饥人谷前端6班）</p>
+<p>文章来源：<br><a href="http://www.jianshu.com/p/906225800e93" target="_blank" rel="external">http://www.jianshu.com/p/906225800e93</a></p>
+<hr>
+<p><strong>1、回调函数</strong><br><strong>2、动态参数</strong><br><strong>3、setTimeout 、setInterval</strong><br><strong>4、缓动</strong><br><strong>5、$node.animate</strong></p>
+<hr>
+<p><strong>一、回调函数callback</strong>– 给别人调用的函数</p>
+<ul>
+<li>有参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function traverse(array,callback)&#123;&#10;  var length=array.length&#10;  for(var i=0;i&#60;length;i++)&#123;&#10;    callback(i,array[i])&#10;  &#125;&#10;&#125;&#10;traverse([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;],function(index,item)&#123;&#10;  console.log(index)&#10;  console.log(item)&#10;&#125;)&#10;//0&#10;//&#34;a&#34;&#10;//1&#10;//&#34;b&#34;&#10;//2&#10;//&#34;c&#34;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>无参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function func()&#123;&#10;  console.log(&#34;hello,callback&#34;)&#10;  &#10;&#125;&#10;function other(callback)&#123;&#10;  callback()&#10;&#125;&#10;other(func)&#10;//&#34;hello,callback&#34;</span><br></pre></td></tr></table></figure>
+<p><strong>二、动态参数</strong>–形参不固定的时候用到</p>
+<p>函数里面会内置一个参数对象：arguments<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function doSometingWith(who,say,callback)&#123;&#10;  if(arguments.length===3)&#123;&#10;    console.log(say)&#10;    callback()&#10;  &#125;else if(arguments.length===2)&#123;&#10;    callback=say&#10;    callback()&#10;  &#125;&#10;&#125;&#10;doSometingWith(&#39;tom&#39;,&#39;hi tom&#39;,function()&#123;&#10;               console.log(&#39;play with tom&#39;)&#10;               &#125;)&#10;doSometingWith(&#39;tom&#39;,function()&#123;&#10;  console.log(&#39;hit tom&#39;)&#10;&#125;)&#10;//&#34;hi tom&#34;&#10;&#10;//&#34;play with tom&#34;&#10;&#10;//&#34;hit tom&#34;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p><strong>伪数组</strong><br>实参会放到arguments[i]这个伪数组里面<br>arguments[0],arguments[1]…</p>
+</li>
+<li><p><strong>可读写</strong>（最好不要写，写会改变实参的值）</p>
+</li>
+</ul>
+<p><strong>三、setTimeout setInterval</strong><br>1.setTimeout<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">setTimeout(func,[delay.param1,param2...])</span><br></pre></td></tr></table></figure></p>
+<p>上面可理解为，<strong>在delay时间之后，如果空闲，调用func函数</strong>，以param1，param2…为函数func的参数</p>
+<ul>
+<li>func回调函数</li>
+<li>[]里面的参数可选</li>
+<li>delay是个数字，代表在多少秒之后做什么事<br>delay要注意以下几点：<br><strong>1.单位 ms</strong><br><strong>2.不一定是在指定的时间运行 </strong><br>//在delay时间之后把回调函数放到<strong>待办事项队列</strong>里面，什么时候闲了，再执行<br><strong>3.一定是异步执行的</strong><br><strong>4.delay最小不一定是0</strong><br>如果不是当前页面，最小的间隔是<strong>1s</strong></li>
+<li>setTimeout里面<strong>嵌套</strong>setTimeout,里面的setIimeout最小的间隔是<strong>4ms</strong><br><strong>//嵌套ie下是15ms</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var number=10&#10;&#10;setTimeout(function step()&#123;&#10;  number--&#10;  if(number&#62;0)&#123;&#10;    console.log(number)&#10;    setTimeout(step,1000)&#10;  &#125;else&#123;&#125;&#10;&#125;,1000)</span><br></pre></td></tr></table></figure>
+<p>2.<strong>setInterval</strong> 会不停的重复<br>3.<strong>清除</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">window.clearTimeout(timeoutId)&#10;window.clearInterval(tiemoutId)</span><br></pre></td></tr></table></figure></p>
+<p>4.<strong>嵌套</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">setTimeout(func&#21517;,delay)//&#22914;&#26524;&#22238;&#35843;&#20989;&#25968;&#26377;&#21517;&#23383;&#10;setIiemout(arguments.callee,delay)//&#22238;&#35843;&#20989;&#25968;&#27809;&#21517;&#23383;</span><br></pre></td></tr></table></figure></p>
+<p><strong>四、缓动easing functions</strong><br>更加自然的运行动画<br>//需要装插件<br><strong>五、jQuery动画API</strong><br><strong>1.animate</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">animate(&#21442;&#25968;&#23545;&#35937;,duration,easing,callback)&#10;// &#21442;&#25968;&#23545;&#35937;&#30340;&#23646;&#24615;&#20540;&#21482;&#25903;&#25345;&#25968;&#23383;&#31867;&#22411;&#30340;&#10;width&#12289;height&#12289;opacity(&#36879;&#26126;&#24230;)&#10;//duration&#26377;&#25968;&#23383;&#12289;fast&#12289;slow&#10;//easing&#26377;swing&#12289;linear&#21035;&#30340;&#38656;&#35201;&#25554;&#20214;&#10;//callback&#20989;&#25968;&#22312;&#21160;&#30011;&#23436;&#25104;&#20043;&#21518;&#25191;&#34892;</span><br></pre></td></tr></table></figure></p>
+<p>高级用法<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.animate(&#21442;&#25968;&#23545;&#35937;&#65292;option&#23545;&#35937;)&#10;//option&#23545;&#35937;&#21253;&#25324;duration&#12289;easing&#12289;queue...&#10; &#27880;&#24847;&#65292;queue&#31867;&#22411;&#20026;boolean&#34920;&#31034;&#26159;&#21542;&#25226;&#21160;&#30011;&#25918;&#20837;&#24453;&#21150;&#20107;&#39033;&#38431;&#21015;&#25191;&#34892;&#65292;&#21542;&#20195;&#34920;&#30452;&#25509;&#25191;&#34892;&#21160;&#30011;</span><br></pre></td></tr></table></figure></p>
+<p><strong>2.finish(queue)</strong><br>停止当前的动画，移除所有队列里的动画，完成动画最终状态<br><strong>3.stop</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">stop([clearQueue],[jumpToEnd])&#10;// clearQueue &#26159;&#21542;&#25226;&#38431;&#21015;&#37324;&#30340;&#21160;&#30011;&#28165;&#38500;&#10;// jumpToEnd &#26159;&#21542;&#36339;&#21040;&#26368;&#32456;&#29366;&#24577;</span><br></pre></td></tr></table></figure></p>
+<p><strong>4.delay</strong><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">delay&#65288;&#25968;&#23383;&#65289;&#10;//&#21160;&#30011;&#20572;&#20960;&#31186;,&#21482;&#33021;&#20316;&#29992;&#22312;&#24930;&#24930;&#21160;&#30340;API</span><br></pre></td></tr></table></figure></p>
+<p>5.slideUp()、slideDown()、slideToggle()//卷起来、展开</p>
+<p>6.fadeOut()、fadeIn()、fadeToggle()//淡出、淡入</p>
+<p>7.fadeTo<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fadeTo(duration,[&#25968;&#20540;]&#65292;callback)&#10;//&#25968;&#20540;&#20195;&#34920;&#36879;&#26126;&#24230;</span><br></pre></td></tr></table></figure></p>
+<p>8.hide()、show()、toggle()</p>
+
+</div>
+
+                
+            </div>
+            <script src="/jirengu-inc/new-book/js/smooth-scroll.min.js"></script>
+            <script src="/jirengu-inc/new-book/js/common.js"></script>
+        
+
+        <script src="/jirengu-inc/new-book/js/fastclick.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>
