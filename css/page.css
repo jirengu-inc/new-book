@@ -572,6 +572,7 @@ ul.demo li {
 }
 .content img {
   max-width: 100%;
+  cursor: pointer;
 }
 .content span.light {
   color: #7f8c8d;
@@ -634,6 +635,7 @@ ul.demo li {
 }
 .content iframe {
   margin: 1em 0;
+  border: 1px dashed #ccc;
 }
 .content p.tip {
   padding: 12px 24px 12px 30px;
