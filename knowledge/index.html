@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>起步 - </title>
+        <title>HTML CSS编码规范 - </title>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,7 +80,7 @@
         <ul class="menu-root">
             
                 <li>
-                    <a href="/jirengu-inc/new-book/knowledge/index.html" class="sidebar-link current">起步</a>
+                    <a href="/jirengu-inc/new-book/knowledge/index.html" class="sidebar-link current">HTML CSS编码规范</a>
                 </li>
             
         </ul>
@@ -89,8 +89,59 @@
 
 
 <div class="content knowledge with-sidebar">
-    <h1>起步</h1>
-    <p>2</p>
+    <h1>HTML CSS编码规范</h1>
+    <h2 id="google_html_css编码规范">google html css编码规范</h2><p><a href="https://google.github.io/styleguide/htmlcssguide.xml" target="_blank" rel="external">https://google.github.io/styleguide/htmlcssguide.xml</a></p>
+<h2 id="bootstrap_编码规范">bootstrap 编码规范</h2><p><a href="http://codeguide.bootcss.com/" target="_blank" rel="external">http://codeguide.bootcss.com/</a></p>
+<h2 id="HTML_class_id_命名经验">HTML class id 命名经验</h2><h3 id="相关规范">相关规范</h3><p>1.所有命名都使用英文小写</p>
+<p>推荐：<figure class="highlight"><figcaption><span>class="main"> ```</span></figcaption><table><tr><td class="code"><pre><span class="line">&#10;&#19981;&#25512;&#33616;&#65306; ```&#60;div class=&#34;Main&#34;&#62;&#60;/div&#62;</span><br></pre></td></tr></table></figure></p>
+<p>2.命名用引号包裹</p>
+<p>推荐：<figure class="highlight"><figcaption><span>id="header"> ```</span></figcaption><table><tr><td class="code"><pre><span class="line">&#10;&#19981;&#25512;&#33616;&#65306; ```&#60;div id=header&#62;&#60;/div&#62;</span><br></pre></td></tr></table></figure></p>
+<p>3.用中横线连接</p>
+<p>推荐：<figure class="highlight"><figcaption><span>class="mod-modal"> ```</span></figcaption><table><tr><td class="code"><pre><span class="line">&#10;&#19981;&#25512;&#33616;&#65306; ```&#60;div class=&#34;modModal&#34;&#62;&#60;/div&#62;</span><br></pre></td></tr></table></figure></p>
+<p>4.命名太长可适当简化</p>
+<p>推荐: <figure class="highlight"><figcaption><span>class="carousel-ct"> ```</span></figcaption><table><tr><td class="code"><pre><span class="line">&#10;&#19981;&#22826;&#25512;&#33616;: ```&#60;div class=&#34;carousel-container&#34;&#62;</span><br></pre></td></tr></table></figure></p>
+<p>5.命名体现功能，不涉及表现样式(颜色、字体、边框、背景等)</p>
+<p>推荐：<figure class="highlight"><figcaption><span>class="text-lesser">```</span></figcaption><table><tr><td class="code"><pre><span class="line">&#10;&#19981;&#25512;&#33616;&#65306; ```&#60;div class=&#34;light-grey&#34;&#62;&#60;/div&#62;</span><br></pre></td></tr></table></figure></p>
+<h3 id="命名经验">命名经验</h3><ol>
+<li><code>wrap</code> – 用于外侧包裹</li>
+<li><code>header</code>或者 <code>head</code> – 用于头部</li>
+<li><code>main</code> – 用于主体</li>
+<li><code>container</code>或 <code>ct</code> – 包裹容器</li>
+<li><code>aside</code> – 用于侧边栏</li>
+<li><code>nav</code>  – 用于导航条</li>
+<li><code>tab</code>  – 用于Tab切换选项卡</li>
+<li><code>content</code> – 和header footer 对应，用于主要内容</li>
+<li><code>footer</code>或者<code>foot</code> – 用于尾部</li>
+<li><code>ad</code> – 广告</li>
+<li><code>subnav</code> – 二级导航</li>
+<li><code>menu</code> – 菜单</li>
+<li><code>tag</code> – 标签</li>
+<li><code>message</code>或者<code>notice</code> – 提示消息</li>
+<li><code>summary</code> – 摘要</li>
+<li><code>logo</code> – logo</li>
+<li><code>search</code> – 搜索框</li>
+<li><code>login</code> – 登录</li>
+<li><code>register</code> – 注册</li>
+<li><code>username</code> – 用户名</li>
+<li><code>password</code> – 密码</li>
+<li><code>dropmenu</code> – 下拉菜单</li>
+<li><code>banner</code> – 广告条</li>
+<li><code>copyright</code> – 版权</li>
+<li><code>modal</code>或者 <code>dialog</code> – 弹窗</li>
+<li><code>tooltip</code> – 鼠标放置上去的提示</li>
+</ol>
+<blockquote>
+<p>上面是一些约定俗成的命名。虽然没有统一定论，但可记住下面的经验：</p>
+<ol>
+<li>命名是功能的描述，如果不知道如何命名，把你能想到的中文名字翻译成看着最顺眼的英文</li>
+<li>对于功能复杂的命名，可使用”是什么-什么特性”的命名方式，如”text-lesser”代表样式地位更轻一点的文本，”dialog-open”代表打开了的弹窗</li>
+<li>可充分利用语意化标签，配合直接子元素选择器去定位元素，省去一部分元素的命名</li>
+</ol>
+</blockquote>
+<p>如:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"tab&gt;</span><br><span class="line">    &lt;ul class="</span><span class="value">nav"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"panels"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="class">.tab</span> <span class="class">.nav</span> &gt; <span class="tag">li</span> <span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="class">.tab</span> <span class="class">.panels</span> &gt; <span class="tag">li</span><span class="rules">&#123;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>可省去li元素的命名</p>
 
     
     <div class="footer"></div>

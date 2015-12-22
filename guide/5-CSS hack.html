@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>开始 - </title>
+        <title>CSS HTCK - </title>
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,7 +80,7 @@
         <ul class="menu-root">
             
                 <li>
-                    <a href="/jirengu-inc/new-book/guide/index.html" class="sidebar-link current">开始</a>
+                    <a href="/jirengu-inc/new-book/guide/index.html" class="sidebar-link">开始</a>
                 </li>
             
                 <li>
@@ -96,7 +96,7 @@
                 </li>
             
                 <li>
-                    <a href="/jirengu-inc/new-book/guide/5-CSS hack.html" class="sidebar-link">CSS HTCK</a>
+                    <a href="/jirengu-inc/new-book/guide/5-CSS hack.html" class="sidebar-link current">CSS HTCK</a>
                 </li>
             
                 <li>
@@ -109,18 +109,45 @@
 
 
 <div class="content guide with-sidebar">
-    <h1>开始</h1>
-    <h2 id="课程介绍">课程介绍</h2><ul>
-<li><a href="">认识前端</a></li>
-<li><a href="">课程大纲</a></li>
-<li><a href="">起步</a></li>
+    <h1>CSS HTCK</h1>
+    <h3 id="CSS_Hack">CSS Hack</h3><p>可参考<a href="http://browserhacks.com" target="_blank" rel="external">大而全且权威的hack</a></p>
+<p>CSS hack由于不同的浏览器，比如IE6,IE7,chrome等，对CSS的解析认识不一样，因此会导致生成的页面效果不一样。使用CSShack让不同浏览器效果一致。</p>
+<ol>
+<li>IE条件注释</li>
+</ol>
+<p>#<br>    只在IE下生效<br>    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="ie.css">
+    <![endif]--></p>
+<pre><code>只在IE6下生效
+<span class="comment">&lt;!--[if IE 6]&gt;
+    &lt;link rel="stylesheet" type="text/css" href="ie6.css"&gt;
+&lt;![endif]--&gt;</span>
+
+只在IE6以上版本生效
+<span class="comment">&lt;!--[if gte IE 6]&gt;
+这段文字只在IE6以上(包括)版本IE浏览器显示
+&lt;![endif]--&gt;</span>
+qq
+非IE浏览器生效
+<span class="comment">&lt;!--[if !IE]&gt;
+这段文字只在非IE浏览器显示
+&lt;![endif]--&gt;</span>
+</code></pre><ol>
+<li><p>CSS属性Hack</p>
+<ul>
+<li>属性以下划线开头，只有ie6生效<br>  _margin-left: 10px; /<em> ie6 only </em>/</li>
+<li>属性以星号开头，只在ie6 ie7生效<br>  *color: red;</li>
+<li>以\9结尾，所有的ie生效<br>  color: black\9;</li>
+<li>以\0结尾，ie8, 9, 10<br>  color: white\0;</li>
 </ul>
-<h2 id="代码示例">代码示例</h2><h2 id="作业安排">作业安排</h2><h2 id="学员博客">学员博客</h2>
+</li>
+</ol>
+
     
       <div class="guide-links">
         
+          <span>← <a href="/jirengu-inc/new-book/guide/4-html_base.html">编辑器使用、理解网页</a></span>
         
-          <span style="float:right"><a href="/jirengu-inc/new-book/guide/2-outline.html">前端大纲</a> →</span>
         
       </div>
     
