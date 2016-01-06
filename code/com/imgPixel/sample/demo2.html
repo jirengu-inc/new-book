@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+
+
+</head>
+<body>
+	<div class="container"></div>
+    
+
+<script src="../lib/pixel.js"></script>
+<script>
+	
+
+
+	Pixel.create('valley' );
+	Pixel.create('hello', {
+		ct: document.getElementsByClassName('container')[0],
+		pixelWidth: 10,
+		fade: true,
+		style: {
+			background: 'red'
+		}
+	});
+
+	var imgs = [];
+	for(var i=0;i<34; i++){
+		imgs.push('img/'+i+'.jpg');
+	}
+	Pixel.create('hUnger', {
+		pixelWidth: 30,
+		bgColor: '#E84E41',//'#1bca87',
+		delay: 2000,
+		fade: true,
+		imgs: imgs
+	});
+
+</script>    
+</body>
+</html>
