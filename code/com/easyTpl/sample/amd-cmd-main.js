@@ -3,6 +3,7 @@
  */
 
 define(function (require) {
+    console.log('222');
     var easyTpl = require('easyTpl');
     var tpl = 'hello my name is {{name}}. I have a {{dog.age}} year old dog. His color is {{dog.color}}.';
 
